@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbox</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="ai-chat-box">
+            <img src="ai-png-image-generator.png" alt="" id="aiImage" width="80">
+            <div class="ai-chat-area">
+                Hello 😊 Welcome to Prince Ai ChatBox 🤝✨
+            </div>
+        </div>
+    </div>
+
+    <!-- Input area -->
+    <div class="prompt-area">
+        <input type="text" id="prompt" placeholder="Write to search....">
+
+        <!-- Send text button -->
+        <button id="submit" title="Send Message">
+            <img src="image-02-stroke-rounded (1).svg" alt="send">
+        </button>
+
+        <!-- Upload image button -->
+        <input type="file" id="imageInput" accept="image/*" style="display:none;">
+        <button id="imageBtn" title="Upload Image">
+            <img src="search.png" alt="upload">
+        </button>
+
+        <!-- Voice input button -->
+        <button id="voiceBtn" title="Speak">
+            🎤
+        </button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
