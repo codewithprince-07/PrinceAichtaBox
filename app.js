@@ -6,7 +6,8 @@ const voiceBtn = document.querySelector("#voiceBtn");
 const submitBtn = document.querySelector("#submit");
 
 const API_URL =
-  "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCV2dIz_RtDYER7bnCiBWIpysY0S7QfKJY"; // Tumhara Gemini API Key
+  "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
+const API_KEY = "AIzaSyAH4YISmms0bMgi7bvcoleiQ1qMcAxQVFY"; // my api key
 
 // ----------------- Generate AI Response -----------------
 async function generateResponse(aiChatBox, userText) {
@@ -27,6 +28,7 @@ async function generateResponse(aiChatBox, userText) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "X-goog-api-key": API_KEY, // key header में भेज रहे हैं
       },
       body: JSON.stringify(requestBody),
     });
@@ -135,6 +137,7 @@ async function handleImageUpload(file) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "X-goog-api-key": API_KEY, //  key header में भेज रहे हैं
         },
         body: JSON.stringify({
           contents: [
@@ -201,3 +204,4 @@ imageInput.addEventListener("change", () => {
 voiceBtn.addEventListener("click", () => {
   startVoiceRecognition();
 });
+
