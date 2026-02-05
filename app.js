@@ -7,7 +7,7 @@ const submitBtn = document.querySelector("#submit");
 
 const API_URL =
   "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
-const API_KEY = "AIzaSyDvsxpOoJbkspDmk-CJJSQIIiY9IF6DZXY"; // my api key
+const API_KEY = "AIzaSyDPbA4vqEt_HW2E7EZpjvpp6cyMNjeTCNM"; // my api key
 
 // ----------------- Generate AI Response -----------------
 async function generateResponse(aiChatBox, userText) {
@@ -204,5 +204,6 @@ imageInput.addEventListener("change", () => {
 voiceBtn.addEventListener("click", () => {
   startVoiceRecognition();
 });
+
 
 
