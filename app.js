@@ -7,7 +7,7 @@ const submitBtn = document.querySelector("#submit");
 
 const API_URL =
   "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
-const API_KEY = "AIzaSyB0RwESAt2uzqliMMFyUn0spe1w6CFYRrk"; // my api key
+const API_KEY = "AIzaSyAfUOz2MUP7d44tsCDCibuTOPCgecJ6aFU"; // my api key
 
 // ----------------- Generate AI Response -----------------
 async function generateResponse(aiChatBox, userText) {
